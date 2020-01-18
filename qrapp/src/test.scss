@@ -1,0 +1,11 @@
+/*SASS*/
+$primary: #d1f3ff;
+$secondary: #ddd1ff;
+
+#menu{
+    background-color: $primary;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    border-color: rgba(0, 0, 0, 0.02);
+    border-radius: 12px;
+    border-width: 1px;
+}

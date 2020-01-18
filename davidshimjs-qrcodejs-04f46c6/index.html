@@ -10,7 +10,11 @@
 <body>
 <input id="text" type="text" value="http://jindo.dev.naver.com/collie" style="width:80%" /><br />
 <div id="qrcode" style="width:100px; height:100px; margin-top:15px;"></div>
-
+<ul id="choice">
+	<li id="c1">asdf</li>
+	<li id="c2">qwer</li>
+	<li id="c3">zxcv</li>
+</ul>
 <script type="text/javascript">
 var qrcode = new QRCode(document.getElementById("qrcode"), {
 	width : 100,
@@ -26,6 +30,12 @@ function makeCode () {
 		return;
 	}
 	
+	var vanilla = document.getElementById("choice");
+	var vnb = vanilla.getElementsByTagName("li").length;
+	//for(var i = 0; i < vnb; i++){
+
+	//}
+
 	qrcode.makeCode(elText.value);
 }
 
