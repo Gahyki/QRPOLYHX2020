@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>Student QR</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+        <script type="text/javascript" src="davidshimjs-qrcodejs-04f46c6/jquery.min.js"></script>
+        <script type="text/javascript" src="davidshimjs-qrcodejs-04f46c6/qrcode.js"></script>
+        <link rel="stylesheet" href="app.css"/> 
+    </head>
+    <body>
+        <div class="vertical-menu">
+            <a href="#" class="active">Home</a>
+            <a href="#">Scan</a>
+            <a href="#">My Profile</a>
+            <a href="https://my.concordia.ca/psp/upprpr9/?cmd=login&languageCd=ENG&">MyConcordia</a>
+        </div>
+        <div class="navbar">
+            <a href="#home" id="active" value="Jason Kim, 40097242">Access</a>
+            <a href="#news">Email</a>
+            <a href="#contact">Schedule</a>
+        </div>
+
+        <div id="qrcode">qwer</div>
+
+        <script type="text/javascript">
+        var qrcode = new QRCode(document.getElementById("qrcode"), {
+            width : 100,
+            height : 100
+        });
+
+        function makeCode () {		
+            var elText = document.getElementById("active");
+            
+            qrcode.makeCode(elText.value);
+        }
+
+        makeCode();
+
+        $("#active").
+            on("blur", function () {
+                makeCode();
+            }).
+            on("keydown", function (e) {
+                if (e.keyCode == 13) {
+                    makeCode();
+                }
+            });
+        </script>
+    </body>
+</html>

@@ -3,11 +3,9 @@ import Drawer from "@material-ui/core/Drawer";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
-import IconButton from '@material-ui/core/IconButton';
-import { makeStyles, useTheme } from '@material-ui/core/styles';
-import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
-import ChevronRightIcon from '@material-ui/icons/ChevronRight';
+import { Helmet } from "react-helmet";
 import "./App.css";
+import "/davidshimjs-qrcodejs-04f46c6/qrcode.js";
 
 
 //Menu Item
@@ -39,6 +37,7 @@ class MenuItem extends React.Component{
   }
 }
 
+
 export default class App extends React.Component{
   constructor(){
     super();
@@ -47,11 +46,11 @@ export default class App extends React.Component{
   render(){
     return(
       <div className="App">
-          <div id="menu">
-            <Drawer variant="permanent" width="240">
-             <MenuItem/>
-            </Drawer>
-          </div>
+        <div id="menu">
+          <Drawer variant="permanent" width="240">
+            <MenuItem/>
+          </Drawer>
+        </div>
         <div id="content">
           <header className="App-header">
             <label>I like it</label>

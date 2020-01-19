@@ -1,0 +1,60 @@
+body{
+    margin: 0px;
+}
+.vertical-menu {
+    width: 15vw;
+    height: 100vh;
+    background-image: linear-gradient(#ddd1ff, #d1f3ff);
+    float: left;
+}
+  
+.vertical-menu a {
+    color: black;
+    display: block;
+    padding: 12px 24px;
+    text-decoration: none;
+}
+
+.vertical-menu a:hover {
+    background-color: #ccc;
+}
+
+.vertical-menu a.active {
+    background-image: radial-gradient(#ddd1ff, #d1f3ff);
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: absolute;
+    bottom: 0;
+    width:85vw;
+    margin-left: 15vw;
+}
+  
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+  
+.navbar a:hover {
+    background: #f1f1f1;
+    color: black;
+}
+  
+.navbar a#active {
+    background-color: #4CAF50;
+    color: white;
+}
+  
+#qrcode{
+    text-align: center;
+    position: fixed;
+    width: 50vw;
+    height: 50vh;
+}
