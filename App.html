@@ -1,6 +1,7 @@
+<!DOCTYPE html>
 <html>
     <head>
-        <title>Student QR</title>
+        <title>Student QR Home</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
         <script type="text/javascript" src="davidshimjs-qrcodejs-04f46c6/jquery.min.js"></script>
@@ -12,9 +13,13 @@
         <!-- Vertical Menu -->
         <div class="vertical-menu">
             <a href="#" class="active">Home</a>
-            <a href="#">Scan</a>
+            <a href="Scan.html">Scan</a>
             <a href="#">My Profile</a>
             <a href="https://my.concordia.ca/psp/upprpr9/?cmd=login&languageCd=ENG&">MyConcordia</a>
+            <hr>
+            <div>
+                <img src="Images/profile.png" style="height: 150px; width: 150px; padding-left: 18px; padding-top: 6px;"/>
+            </div>
         </div>
         <!-- Horizontal Bar -->
         <div class="navbar">
@@ -24,8 +29,8 @@
         </div>
         <script>
             function accessclick(){
-                var activebtn = document.getElementById("active").innerText
-                if(activebtn != "Access"){
+                var activebtn = document.getElementById("active").className
+                if(activebtn != "c1"){
                     //Remove active status
                     $("#active").removeAttr("id");
                     //Add active status
@@ -45,8 +50,8 @@
 
             }
             function emailclick(){
-                var activebtn = document.getElementById("active").innerText
-                if(activebtn != "Email"){
+                var activebtn = document.getElementById("active").className
+                if(activebtn != "c2"){
                     //Remove active status
                     $("#active").removeAttr("id");
                     //Add active status
@@ -66,8 +71,8 @@
 
             }
             function scheduleclick(){
-                var activebtn = document.getElementById("active").innerText
-                if(activebtn != "Schedule"){
+                var activebtn = document.getElementById("active").className
+                if(activebtn != "c3"){
                     //Remove active status
                     $("#active").removeAttr("id");
                     //Add active status

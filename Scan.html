@@ -1,13 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>JQuery HTML5 QR Code Scanner using Instascan JS Example - ItSolutionStuff.com</title>
+	<title>Studen </title>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://rawgit.com/schmich/instascan-builds/master/instascan.min.js"></script>
+  <script src="https://rawgit.com/schmich/instascan-builds/master/instascan.min.js"></script>
+  <link rel="stylesheet" href="app.css"/> 
 </head>
 <body>
-
-    <video id="preview"></video>
+      <!-- Vertical Menu -->
+      <div class="vertical-menu">
+        <a href="App.html">Home</a>
+        <a href="#" class="active">Scan</a>
+        <a href="#">My Profile</a>
+        <a href="https://my.concordia.ca/psp/upprpr9/?cmd=login&languageCd=ENG&">MyConcordia</a>
+        <hr>
+        <div>
+            <img src="Images/profile.png" style="height: 150px; width: 150px; padding-left: 18px; padding-top: 6px;"/>
+        </div>
+    </div>
+    <div>
+      <video id="preview"></video>
+    </div>
     <script type="text/javascript">
       let scanner = new Instascan.Scanner({ video: document.getElementById('preview') });
       scanner.addListener('scan', function (content) {
@@ -23,6 +36,5 @@
         console.error(e);
       });
     </script>
-
-</body>
+  </body>
 </html>
