@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS User Profile Card</title>
+	<link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+</head>
+<body>
+<script>
+    var inputs, index;
+    function readOnly()
+    {
+        inputs = document.getElementsByTagName('input')
+        for(index = 0; index < inputs.length; index++)
+        {
+            inputs[index].readOnly = true;
+        }
+    }
+    function edit()
+    {
+        inputs = document.getElementsByTagName('input')
+        for(index = 0; index < inputs.length; index++)
+        {
+            inputs[index].readOnly = false;
+        }
+    }
+    readOnly();
+    function change()
+    {
+        if(document.getElementById("myButton1").innerHTML=="Save")
+        { 
+            readOnly();
+            document.getElementById("myButton1").innerHTML = "Edit";
+        }
+        else
+        {
+            edit();
+            document.getElementById("myButton1").innerHTML = "Save";
+        }
+    }
+    function 
+</script>
+
+<div class="wrapper">
+    <div class="left">
+        <img src="https://i.imgur.com/cMy8V5j.png" alt="user" width="100">
+        <button type="button" value="Button Text" id="myButton1" onclick="change()">Edit</button>
+    </div>
+    <div class="right">
+        <div class="info">
+            <h3>Information</h3>
+            <div class="info_data">
+                <div class="data">
+                    <h4>E-mail Address</h4>
+                    <input type="text" name="E-mail Address" readonly><br><br>
+                    <h4>Phone</h4>
+                    <input type="text" name="Phone" readonly><br><br>
+                    <h4>Student ID</h4>
+                    <input type="text" name="ID" readonly><br><br>
+                    <h4>Address</h4>
+                    <input type ="text" name="Address" readonly><br><br>
+                    <h4>Linkedin</h4>
+                    <input type ="text" name="Linkedin" readonly><br><br>
+                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
