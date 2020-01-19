@@ -7,7 +7,7 @@ body{
 .vertical-menu {
     width: 15vw;
     height: 100vh;
-    background: radial-gradient(#585858,#707070);
+    background-color: #333;
     float: left;
 }
   
@@ -23,7 +23,7 @@ body{
 }
 
 .vertical-menu a.active {
-    background-image: radial-gradient(#ddd1ff, #d1f3ff);
+    background-color: #4CAF50;
 }
 
 .navbar {
@@ -46,8 +46,7 @@ body{
 }
   
 .navbar a:hover {
-    background: #f1f1f1;
-    color: black;
+    text-decoration: underline;
 }
   
 .navbar a#active {
