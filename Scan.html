@@ -7,8 +7,6 @@
 </head>
 <body>
 
-    <h1>JQuery HTML5 QR Code Scanner using Instascan JS Example - ItSolutionStuff.com</h1>
-
     <video id="preview"></video>
     <script type="text/javascript">
       let scanner = new Instascan.Scanner({ video: document.getElementById('preview') });
@@ -19,7 +17,7 @@
         if (cameras.length > 0) {
           scanner.start(cameras[0]);
         } else {
-          console.error('No cameras found.');
+          console.error('No camera found.');
         }
       }).catch(function (e) {
         console.error(e);
