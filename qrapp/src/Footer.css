@@ -1,0 +1,11 @@
+.phantom {
+  display: "block";
+  padding: "20px";
+  height: "60px";
+  width: "100%";
+}
+
+.footer {
+  width: 50%;
+  margin: auto;
+}
