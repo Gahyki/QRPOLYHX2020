@@ -1,15 +1,18 @@
 body{
     margin: 0px;
+    background: linear-gradient(217deg, rgba(0,0,0,.8), rgba(0,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(0,0,0,.8), rgba(0,0,0,0) 70.71%),
+            linear-gradient(336deg, rgba(0,0,0,.8), rgba(0,0,0,0) 70.71%);
 }
 .vertical-menu {
     width: 15vw;
     height: 100vh;
-    background-image: linear-gradient(#ddd1ff, #d1f3ff);
+    background: radial-gradient(#585858,#707070);
     float: left;
 }
   
 .vertical-menu a {
-    color: black;
+    color: white;
     display: block;
     padding: 12px 24px;
     text-decoration: none;
@@ -55,6 +58,8 @@ body{
 #qrcode{
     text-align: center;
     position: fixed;
-    width: 50vw;
-    height: 50vh;
+    padding-left: 47vw;
+    margin-top: 20vh;
+    z-index: -1;
+
 }

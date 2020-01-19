@@ -20,18 +20,18 @@
             <a href="#contact">Schedule</a>
         </div>
 
-        <div id="qrcode">qwer</div>
+        <div id="qrcode"></div>
 
         <script type="text/javascript">
         var qrcode = new QRCode(document.getElementById("qrcode"), {
-            width : 100,
-            height : 100
+            width : 300,
+            height : 300
         });
 
         function makeCode () {		
             var elText = document.getElementById("active");
             
-            qrcode.makeCode(elText.value);
+            qrcode.makeCode(elText.getAttribute("value"));
         }
 
         makeCode();
